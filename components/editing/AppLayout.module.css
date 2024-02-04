@@ -1,0 +1,51 @@
+.appLayout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside workingArea";
+  grid-template-rows: 50px 1fr; /* Height of header, Flexible height for everything else */
+  grid-template-columns: 256px 1fr; /* Width of sidebar, flexible width for everything else */
+}
+
+.header {
+  grid-area: header;
+  background: var(--background-header);
+  color: #fff;
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.header a {
+  color: var(--color-link-cta);
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.aside {
+  grid-area: aside;
+  background: var(--background-sidebar);
+  overflow: auto;
+  resize: horizontal;
+  border-right: 4px solid black;
+  color: var(--color-ui);
+}
+
+.workingArea {
+  grid-area: workingArea;
+  padding: 1rem;
+}

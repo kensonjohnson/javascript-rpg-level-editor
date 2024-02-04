@@ -1,6 +1,20 @@
 :root {
   --background-body: #f2f2f2;
   --color-primary: #111;
+  --color-link-cta: #5fa5fe;
+  --background-header: #181818;
+  --background-sidebar: #0d0d13;
+  --background-panel: #363641;
+  --background-primary-cta: #3276cd;
+  --background-success: #32cd67;
+  --background-tile-canvas: #fff;
+  --background-link-cta: #1368c5;
+  --color-ui: #b9b9b9;
+  --color-danger: #ff6f6f;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html,
@@ -10,4 +24,31 @@ body {
   height: 100%;
   background: var(--background-body);
   color: var(--color-primary);
+}
+
+canvas {
+  image-rendering: pixelated;
+}
+
+.button,
+.input {
+  border-radius: 4px;
+  height: 2rem;
+}
+.button.primary {
+  border: 1px solid transparent;
+  background: var(--background-primary-cta);
+  color: white;
+}
+.button.secondary {
+  padding: 0 1rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.button.danger {
+  padding: 0 1rem;
+  color: var(--color-danger);
+  border: 1px solid var(--color-danger);
+  background: none;
 }
