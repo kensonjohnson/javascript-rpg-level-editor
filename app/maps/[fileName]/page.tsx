@@ -1,7 +1,5 @@
+import AppLayout from "@/components/editing/AppLayout";
+
 export default function MapDetailsPage() {
-  return (
-    <div>
-      <p>This is a map</p>
-    </div>
-  );
+  return <AppLayout />;
 }
