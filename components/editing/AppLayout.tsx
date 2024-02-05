@@ -5,10 +5,14 @@ import styles from "./AppLayout.module.css";
 
 import { TilesetLoader } from "../tilesets/TilesetLoader";
 import { TilesetGrid } from "../tilesets/TilesetGrid";
+import { TileSelectionContext } from "@/contexts/TileSelectionContext";
+import { useState } from "react";
 
 interface AppLayoutProps {}
 
 export function AppLayout(props: AppLayoutProps) {
+  const [selectedTileId, setSelectedTileId] = useState<string>("1_0x0");
+
   return (
     <TilesetLoader
       renderLoading={() => {
@@ -24,12 +28,18 @@ export function AppLayout(props: AppLayoutProps) {
               </div>
               <div>Save Button</div>
             </header>
-            <aside className={styles.aside}>
-              {Array.from(imageMap).map(([key, image]) => {
-                return <TilesetGrid key={key} imageRef={image} />;
-              })}
-            </aside>
-            <div className={styles.workingArea}>Painting Area Here</div>
+            <TileSelectionContext.Provider
+              value={[selectedTileId, setSelectedTileId]}
+            >
+              <aside className={styles.aside}>
+                {Array.from(imageMap).map(([key, image]) => {
+                  return (
+                    <TilesetGrid key={key} tilesetId={key} imageRef={image} />
+                  );
+                })}
+              </aside>
+              <div className={styles.workingArea}>Painting Area Here</div>
+            </TileSelectionContext.Provider>
           </main>
         );
       }}
