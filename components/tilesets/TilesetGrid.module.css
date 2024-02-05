@@ -1,0 +1,23 @@
+.tilesetContainer {
+  position: relative;
+}
+
+.tileButtonGrid {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tileButton {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: none;
+}
+.tileButton[data-active="true"] {
+  outline: 2px solid cyan;
+}
