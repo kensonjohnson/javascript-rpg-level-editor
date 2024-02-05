@@ -18,6 +18,10 @@ export function TilesetLoader(props: TilesetLoaderProps) {
         key: "1",
         imgSrc: "/tilesets/Tileset1.png",
       },
+      {
+        key: "2",
+        imgSrc: "/tilesets/Tileset2.png",
+      },
       // Add more tilesets here
     ];
 
