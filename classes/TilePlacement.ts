@@ -12,6 +12,7 @@ type ITilePlacement = {
 
 export const EVENT_TILE_PLACEMENTS_UPDATED = "EVENT_TILE_PLACEMENTS_UPDATED";
 export const LAYER_BOTTOM = "LAYER_BOTTOM";
+export const LAYER_TOP = "LAYER_TOP";
 
 export class TilePlacements {
   events: EventEmitter;
