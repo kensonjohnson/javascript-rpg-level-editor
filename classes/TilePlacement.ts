@@ -31,6 +31,13 @@ export class TilePlacements {
     tileId: string,
     layerId: string
   ) {
+    const key = `${x}x${y}`;
+    const layerIndex = this.state.findIndex(
+      (layer) => layer.layerId === layerId
+    );
+    if (layerIndex > -1) {
+      this.state[layerIndex].tiles[key] = { tileset, tileId };
+    }
     this.events.emit(EVENT_TILE_PLACEMENTS_UPDATED, this.state);
   }
 

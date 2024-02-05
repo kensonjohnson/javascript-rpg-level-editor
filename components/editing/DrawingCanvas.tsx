@@ -1,8 +1,13 @@
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import styles from "./DrawingCanvas.module.css";
-import { ITileLayer, TilePlacements } from "@/classes/TilePlacement";
+import {
+  EVENT_TILE_PLACEMENTS_UPDATED,
+  ITileLayer,
+  TilePlacements,
+} from "@/classes/TilePlacement";
 import { TilesetImageMap } from "../tilesets/TilesetLoader";
 import { GRID_SIZE } from "../tilesets/TilesetGrid";
+import { TileSelectionContext } from "@/contexts/TileSelectionContext";
 
 type DrawingCanvasProps = {
   layerId: string;
@@ -15,6 +20,8 @@ export function DrawingCanvas({
   tilePlacementsRef,
   tilesetImageMap,
 }: DrawingCanvasProps) {
+  const [selectedTile] = useContext(TileSelectionContext);
+
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   function drawTiles(tileLayerPlacements: ITileLayer[]) {
@@ -40,8 +47,6 @@ export function DrawingCanvas({
       const [drawX, drawY] = tileKey.split("x");
       const [tileX, tileY] = tileData.tileId.split("x");
 
-      console.log(drawX, drawY, tileX, tileY);
-
       const tilesetImage = tilesetImageMap.get(tileData.tileset);
       if (!tilesetImage) return;
 
@@ -62,7 +67,45 @@ export function DrawingCanvas({
 
   useEffect(() => {
     drawTiles(tilePlacementsRef.state);
+
+    const onStateChange = (newValue: ITileLayer[]) => {
+      drawTiles(newValue);
+    };
+
+    // Subscriber
+    tilePlacementsRef.events.on(EVENT_TILE_PLACEMENTS_UPDATED, onStateChange);
+
+    return () => {
+      tilePlacementsRef.events.removeListener(
+        EVENT_TILE_PLACEMENTS_UPDATED,
+        onStateChange
+      );
+    };
   }, []);
 
-  return <canvas ref={canvasRef} className={styles.drawingCanvas}></canvas>;
+  return (
+    <canvas
+      ref={canvasRef}
+      className={styles.drawingCanvas}
+      onMouseDown={(event) => {
+        const canvas = event.target as HTMLCanvasElement;
+        const rect = canvas.getBoundingClientRect();
+
+        const x = (event.clientX - rect.left) / 2;
+        const y = (event.clientY - rect.top) / 2;
+        const flooredX = x - (x % GRID_SIZE);
+        const flooredY = y - (y % GRID_SIZE);
+
+        const [tilesetId, selectedTileId] = selectedTile.split("_");
+
+        tilePlacementsRef.updateTileAtPosition(
+          flooredX,
+          flooredY,
+          tilesetId,
+          selectedTileId,
+          layerId
+        );
+      }}
+    />
+  );
 }
