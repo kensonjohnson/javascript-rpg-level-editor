@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./AppLayout.module.css";
 
 import { TilesetLoader } from "../tilesets/TilesetLoader";
+import { TilesetGrid } from "../tilesets/TilesetGrid";
 
 interface AppLayoutProps {}
 
@@ -13,7 +14,7 @@ export function AppLayout(props: AppLayoutProps) {
       renderLoading={() => {
         return <p>Loading...</p>;
       }}
-      renderLoaded={() => {
+      renderLoaded={(imageMap) => {
         return (
           <main className={styles.appLayout}>
             <header className={styles.header}>
@@ -23,7 +24,11 @@ export function AppLayout(props: AppLayoutProps) {
               </div>
               <div>Save Button</div>
             </header>
-            <aside className={styles.aside}>Tile Set Here</aside>
+            <aside className={styles.aside}>
+              {Array.from(imageMap).map(([key, image]) => {
+                return <TilesetGrid key={key} imageRef={image} />;
+              })}
+            </aside>
             <div className={styles.workingArea}>Painting Area Here</div>
           </main>
         );
