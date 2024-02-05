@@ -1,0 +1,4 @@
+.drawingCanvas {
+  transform-origin: top left;
+  transform: scale(2);
+}
