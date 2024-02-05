@@ -6,12 +6,27 @@ import styles from "./AppLayout.module.css";
 import { TilesetLoader } from "../tilesets/TilesetLoader";
 import { TilesetGrid } from "../tilesets/TilesetGrid";
 import { TileSelectionContext } from "@/contexts/TileSelectionContext";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { TilePlacements, LAYER_BOTTOM } from "@/classes/TilePlacement";
+import { DrawingCanvas } from "./DrawingCanvas";
 
-interface AppLayoutProps {}
+type AppLayoutProps = {};
 
 export function AppLayout(props: AppLayoutProps) {
   const [selectedTileId, setSelectedTileId] = useState<string>("1_0x0");
+  const tilePlacementsRef = useRef<TilePlacements>(
+    new TilePlacements([
+      {
+        layerId: LAYER_BOTTOM,
+        tiles: {
+          "0x0": {
+            tileset: "1",
+            tileId: "16x32",
+          },
+        },
+      },
+    ])
+  );
 
   return (
     <TilesetLoader
@@ -38,7 +53,13 @@ export function AppLayout(props: AppLayoutProps) {
                   );
                 })}
               </aside>
-              <div className={styles.workingArea}>Painting Area Here</div>
+              <div className={styles.workingArea}>
+                <DrawingCanvas
+                  layerId={LAYER_BOTTOM}
+                  tilePlacementsRef={tilePlacementsRef.current}
+                  tilesetImageMap={imageMap}
+                />
+              </div>
             </TileSelectionContext.Provider>
           </main>
         );

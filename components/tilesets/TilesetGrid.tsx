@@ -9,7 +9,7 @@ type TilesetGridProps = {
 };
 
 const GRID_VIEW_SCALE = 2.0;
-const GRID_SIZE = 16;
+export const GRID_SIZE = 16;
 
 export function TilesetGrid(props: TilesetGridProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);

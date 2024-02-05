@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from "react";
 
 export type TilesetImageMap = Map<string, HTMLImageElement>;
 
-interface TilesetLoaderProps {
+type TilesetLoaderProps = {
   renderLoading: () => React.ReactNode;
   renderLoaded: (imageMap: TilesetImageMap) => React.ReactNode;
-}
+};
 
 export function TilesetLoader(props: TilesetLoaderProps) {
   const [isLoaded, setIsLoaded] = useState(false);
