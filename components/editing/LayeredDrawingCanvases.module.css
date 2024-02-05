@@ -1,0 +1,15 @@
+.layeredDrawingCanvases {
+  position: relative;
+  background: var(--background-tile-canvas);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+}
+.layeredCanvasContainer {
+  position: absolute;
+  inset: 0;
+}
+.layeredCanvasContainer[data-accept-pointer-events="false"] {
+  pointer-events: none;
+}
+.layeredCanvasContainer[data-layer-visible="false"] {
+  opacity: 0;
+}
