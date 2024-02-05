@@ -7,8 +7,12 @@ import { TilesetLoader } from "../tilesets/TilesetLoader";
 import { TilesetGrid } from "../tilesets/TilesetGrid";
 import { TileSelectionContext } from "@/contexts/TileSelectionContext";
 import { useRef, useState } from "react";
-import { TilePlacements, LAYER_BOTTOM } from "@/classes/TilePlacement";
-import { DrawingCanvas } from "./DrawingCanvas";
+import {
+  TilePlacements,
+  LAYER_BOTTOM,
+  LAYER_TOP,
+} from "@/classes/TilePlacement";
+import { LayeredDrawingCanvases } from "./LayeredDrawingCanvases";
 
 type AppLayoutProps = {};
 
@@ -21,7 +25,28 @@ export function AppLayout(props: AppLayoutProps) {
         tiles: {
           "0x0": {
             tileset: "1",
-            tileId: "16x32",
+            tileId: "16x16",
+          },
+          "0x16": {
+            tileset: "1",
+            tileId: "16x16",
+          },
+          "16x0": {
+            tileset: "1",
+            tileId: "16x16",
+          },
+          "16x16": {
+            tileset: "1",
+            tileId: "16x16",
+          },
+        },
+      },
+      {
+        layerId: LAYER_TOP,
+        tiles: {
+          "16x0": {
+            tileset: "1",
+            tileId: "48x176",
           },
         },
       },
@@ -54,9 +79,8 @@ export function AppLayout(props: AppLayoutProps) {
                 })}
               </aside>
               <div className={styles.workingArea}>
-                <DrawingCanvas
-                  layerId={LAYER_BOTTOM}
-                  tilePlacementsRef={tilePlacementsRef.current}
+                <LayeredDrawingCanvases
+                  tilesetPlacementsRef={tilePlacementsRef.current}
                   tilesetImageMap={imageMap}
                 />
               </div>
