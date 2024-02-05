@@ -98,6 +98,12 @@ export function DrawingCanvas({
 
         const [tilesetId, selectedTileId] = selectedTile.split("_");
 
+        const isRemoving = event.shiftKey;
+        if (isRemoving) {
+          tilePlacementsRef.removeTileAtPosition(flooredX, flooredY, layerId);
+          return;
+        }
+
         tilePlacementsRef.updateTileAtPosition(
           flooredX,
           flooredY,

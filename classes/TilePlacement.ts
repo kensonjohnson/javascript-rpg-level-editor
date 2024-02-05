@@ -42,6 +42,13 @@ export class TilePlacements {
   }
 
   removeTileAtPosition(x: number, y: number, layerId: string) {
-    this.events.emit(EVENT_TILE_PLACEMENTS_UPDATED, this.state);
+    const key = `${x}x${y}`;
+    const layerIndex = this.state.findIndex(
+      (layer) => layer.layerId === layerId
+    );
+    if (layerIndex > -1) {
+      delete this.state[layerIndex].tiles[key];
+      this.events.emit(EVENT_TILE_PLACEMENTS_UPDATED, this.state);
+    }
   }
 }
