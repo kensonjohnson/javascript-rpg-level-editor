@@ -1,0 +1,41 @@
+.tileLayerMenu {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.layerRow {
+  display: flex;
+  width: 100%;
+}
+
+.layerRow button {
+  background: none;
+  border: 0;
+  outline: none;
+  appearance: none;
+  height: 1.8rem;
+  cursor: pointer;
+}
+.layerRow button:active {
+  position: relative;
+  top: 1px;
+}
+
+.layerName {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.layerRow[data-active="true"] button {
+  color: var(--background-link-cta);
+  font-weight: bold;
+}
+.layerRow[data-active="false"] button {
+  color: var(--color-ui);
+  font-weight: normal;
+}
+
+.layerVisible[data-visible="false"] {
+  color: var(--color-ui);
+}
