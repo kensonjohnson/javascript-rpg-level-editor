@@ -13,11 +13,21 @@ import {
   LAYER_TOP,
 } from "@/classes/TilePlacement";
 import { LayeredDrawingCanvases } from "./LayeredDrawingCanvases";
+import { TileLayersMenu } from "./TileLayersMenu";
+import {
+  ITileLayers,
+  TileLayersContext,
+  defaultTileLayersState,
+} from "@/contexts/TileLayersContext";
 
 type AppLayoutProps = {};
 
 export function AppLayout(props: AppLayoutProps) {
   const [selectedTileId, setSelectedTileId] = useState<string>("1_0x0");
+  const [layersState, setLayersState] = useState<ITileLayers>(
+    defaultTileLayersState
+  );
+
   const tilePlacementsRef = useRef<TilePlacements>(
     new TilePlacements([
       {
@@ -60,32 +70,35 @@ export function AppLayout(props: AppLayoutProps) {
       }}
       renderLoaded={(imageMap) => {
         return (
-          <main className={styles.appLayout}>
-            <header className={styles.header}>
-              <div className={styles.titleContainer}>
-                <h1>Map Title</h1>
-                <Link href="/maps">All Maps</Link>
-              </div>
-              <div>Save Button</div>
-            </header>
-            <TileSelectionContext.Provider
-              value={[selectedTileId, setSelectedTileId]}
-            >
-              <aside className={styles.aside}>
-                {Array.from(imageMap).map(([key, image]) => {
-                  return (
-                    <TilesetGrid key={key} tilesetId={key} imageRef={image} />
-                  );
-                })}
-              </aside>
-              <div className={styles.workingArea}>
-                <LayeredDrawingCanvases
-                  tilesetPlacementsRef={tilePlacementsRef.current}
-                  tilesetImageMap={imageMap}
-                />
-              </div>
-            </TileSelectionContext.Provider>
-          </main>
+          <TileSelectionContext.Provider
+            value={[selectedTileId, setSelectedTileId]}
+          >
+            <TileLayersContext.Provider value={[layersState, setLayersState]}>
+              <main className={styles.appLayout}>
+                <header className={styles.header}>
+                  <div className={styles.titleContainer}>
+                    <h1>Map Title</h1>
+                    <Link href="/maps">All Maps</Link>
+                  </div>
+                  <div>Save Button</div>
+                </header>
+                <aside className={styles.aside}>
+                  {Array.from(imageMap).map(([key, image]) => {
+                    return (
+                      <TilesetGrid key={key} tilesetId={key} imageRef={image} />
+                    );
+                  })}
+                  <TileLayersMenu />
+                </aside>
+                <div className={styles.workingArea}>
+                  <LayeredDrawingCanvases
+                    tilesetPlacementsRef={tilePlacementsRef.current}
+                    tilesetImageMap={imageMap}
+                  />
+                </div>
+              </main>
+            </TileLayersContext.Provider>
+          </TileSelectionContext.Provider>
         );
       }}
     />
