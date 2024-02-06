@@ -11,6 +11,7 @@ import {
   TilePlacements,
   LAYER_BOTTOM,
   LAYER_TOP,
+  ITileLayer,
 } from "@/classes/TilePlacement";
 import { LayeredDrawingCanvases } from "./LayeredDrawingCanvases";
 import { TileLayersMenu } from "./TileLayersMenu";
@@ -20,47 +21,21 @@ import {
   defaultTileLayersState,
 } from "@/contexts/TileLayersContext";
 
-type AppLayoutProps = {};
+type AppLayoutProps = {
+  fileName: string;
+  initialData: {
+    tiles: ITileLayer[];
+  };
+};
 
-export function AppLayout(props: AppLayoutProps) {
+export function AppLayout({ fileName, initialData }: AppLayoutProps) {
   const [selectedTileId, setSelectedTileId] = useState<string>("1_0x0");
   const [layersState, setLayersState] = useState<ITileLayers>(
     defaultTileLayersState
   );
 
   const tilePlacementsRef = useRef<TilePlacements>(
-    new TilePlacements([
-      {
-        layerId: LAYER_BOTTOM,
-        tiles: {
-          "0x0": {
-            tileset: "1",
-            tileId: "16x16",
-          },
-          "0x16": {
-            tileset: "1",
-            tileId: "16x16",
-          },
-          "16x0": {
-            tileset: "1",
-            tileId: "16x16",
-          },
-          "16x16": {
-            tileset: "1",
-            tileId: "16x16",
-          },
-        },
-      },
-      {
-        layerId: LAYER_TOP,
-        tiles: {
-          "16x0": {
-            tileset: "1",
-            tileId: "48x176",
-          },
-        },
-      },
-    ])
+    new TilePlacements(initialData.tiles)
   );
 
   return (
@@ -77,7 +52,7 @@ export function AppLayout(props: AppLayoutProps) {
               <main className={styles.appLayout}>
                 <header className={styles.header}>
                   <div className={styles.titleContainer}>
-                    <h1>Map Title</h1>
+                    <h1>{fileName}</h1>
                     <Link href="/maps">All Maps</Link>
                   </div>
                   <div>Save Button</div>
