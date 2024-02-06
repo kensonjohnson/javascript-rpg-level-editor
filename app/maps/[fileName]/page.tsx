@@ -11,7 +11,6 @@ type MapDetailsPageProps = {
 export default async function MapDetailsPage({ params }: MapDetailsPageProps) {
   const fileName = params.fileName;
   const initialData = await readMapJsonFile(fileName);
-  console.log(initialData);
 
   // Redirect to maps page if no file found
   if (!initialData) {
