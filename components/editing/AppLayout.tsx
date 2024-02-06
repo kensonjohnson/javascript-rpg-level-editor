@@ -20,6 +20,7 @@ import {
   TileLayersContext,
   defaultTileLayersState,
 } from "@/contexts/TileLayersContext";
+import { SaveButton } from "./SaveButton";
 
 type AppLayoutProps = {
   fileName: string;
@@ -55,7 +56,13 @@ export function AppLayout({ fileName, initialData }: AppLayoutProps) {
                     <h1>{fileName}</h1>
                     <Link href="/maps">All Maps</Link>
                   </div>
-                  <div>Save Button</div>
+                  <div>
+                    <SaveButton
+                      fileName={fileName}
+                      tilePlacementsRef={tilePlacementsRef.current}
+                      tilesetImageMap={imageMap}
+                    />
+                  </div>
                 </header>
                 <aside className={styles.aside}>
                   {Array.from(imageMap).map(([key, image]) => {
