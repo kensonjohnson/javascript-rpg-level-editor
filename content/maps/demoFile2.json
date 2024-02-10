@@ -1,0 +1,1712 @@
+{
+  "tiles": [
+    {
+      "layerId": "LAYER_BOTTOM",
+      "tiles": {
+        "64x32": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "64x48": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "64x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "80x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "80x48": {
+          "tileset": "1",
+          "tileId": "112x16"
+        },
+        "80x32": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "96x32": {
+          "tileset": "1",
+          "tileId": "112x0"
+        },
+        "96x48": {
+          "tileset": "1",
+          "tileId": "112x16"
+        },
+        "96x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "112x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "112x48": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "112x32": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "64x80": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "80x80": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "96x80": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "112x80": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "0x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "16x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "32x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "48x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "64x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "80x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "96x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "112x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "128x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "144x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "160x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "176x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "192x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "208x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "224x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "240x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "256x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "272x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "288x16": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "0x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "32x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "16x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "48x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "96x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "64x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "112x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "80x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "128x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "144x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "160x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "176x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "192x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "224x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "208x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "240x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "256x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "272x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "288x0": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "128x96": {
+          "tileset": "1",
+          "tileId": "64x16"
+        },
+        "128x112": {
+          "tileset": "1",
+          "tileId": "64x16"
+        },
+        "128x128": {
+          "tileset": "1",
+          "tileId": "64x16"
+        },
+        "128x144": {
+          "tileset": "1",
+          "tileId": "64x16"
+        },
+        "144x160": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "160x160": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "176x160": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "192x160": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "208x160": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "224x160": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "240x160": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "256x160": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "272x144": {
+          "tileset": "1",
+          "tileId": "96x16"
+        },
+        "272x128": {
+          "tileset": "1",
+          "tileId": "96x16"
+        },
+        "272x96": {
+          "tileset": "1",
+          "tileId": "96x16"
+        },
+        "272x112": {
+          "tileset": "1",
+          "tileId": "96x16"
+        },
+        "288x80": {
+          "tileset": "1",
+          "tileId": "80x32"
+        },
+        "272x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "272x80": {
+          "tileset": "1",
+          "tileId": "96x16"
+        },
+        "288x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "288x48": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "288x32": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "272x32": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "240x32": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "224x32": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "208x32": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "256x48": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "256x32": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "272x48": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "240x48": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "224x48": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "208x48": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "192x32": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "192x48": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "160x48": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "176x32": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "176x48": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "144x32": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "160x32": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "128x32": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "128x48": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "144x48": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "128x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "144x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "128x80": {
+          "tileset": "1",
+          "tileId": "64x16"
+        },
+        "144x80": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "144x96": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "144x112": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "144x128": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "144x144": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "160x144": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "160x128": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "160x112": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "160x96": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "160x80": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "160x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "176x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "176x80": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "176x96": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "176x112": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "176x128": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "176x144": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "192x144": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "192x128": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "192x96": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "192x80": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "192x112": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "192x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "208x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "224x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "240x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "256x64": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "256x80": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "240x80": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "208x80": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "224x80": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "208x96": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "224x96": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "240x96": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "256x96": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "256x112": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "240x112": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "224x112": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "208x112": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "208x128": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "208x144": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "224x144": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "224x128": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "240x128": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "240x144": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "256x144": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "256x128": {
+          "tileset": "1",
+          "tileId": "80x16"
+        },
+        "48x80": {
+          "tileset": "1",
+          "tileId": "64x32"
+        },
+        "48x48": {
+          "tileset": "1",
+          "tileId": "64x16"
+        },
+        "48x32": {
+          "tileset": "1",
+          "tileId": "64x16"
+        },
+        "48x64": {
+          "tileset": "1",
+          "tileId": "64x16"
+        },
+        "128x160": {
+          "tileset": "1",
+          "tileId": "64x32"
+        },
+        "272x160": {
+          "tileset": "1",
+          "tileId": "96x32"
+        },
+        "48x96": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "48x112": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "48x128": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "48x144": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "48x160": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "48x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "64x192": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "48x192": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "80x192": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "96x192": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "112x192": {
+          "tileset": "1",
+          "tileId": "96x64"
+        },
+        "112x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "112x160": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "112x128": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "112x112": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "112x96": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "96x96": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "80x96": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "64x96": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "64x112": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "80x112": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "96x112": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "96x144": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "112x144": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "96x160": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "96x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "80x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "64x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "64x160": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "64x144": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "80x160": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "80x144": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "64x128": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "80x128": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "96x128": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "32x32": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "32x48": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "32x64": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "32x80": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "32x96": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "32x112": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "32x128": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "32x144": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "32x160": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "32x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "32x192": {
+          "tileset": "1",
+          "tileId": "64x64"
+        },
+        "16x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "16x160": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "16x144": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "16x128": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "16x112": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "16x96": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "16x80": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "16x64": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "16x48": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "16x32": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "0x32": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "0x48": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "0x64": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "0x80": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "0x96": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "0x112": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "0x128": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "0x144": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "0x160": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "0x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "0x192": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "16x192": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "32x208": {
+          "tileset": "1",
+          "tileId": "64x80"
+        },
+        "48x208": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "64x208": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "80x208": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "96x208": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "112x208": {
+          "tileset": "1",
+          "tileId": "96x80"
+        },
+        "128x192": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "144x192": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "160x192": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "176x192": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "192x192": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "208x192": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "224x192": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "240x192": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "256x192": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "272x192": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "288x192": {
+          "tileset": "1",
+          "tileId": "80x80"
+        },
+        "128x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "144x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "160x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "176x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "192x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "208x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "224x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "240x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "256x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "272x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "288x176": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "288x160": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "288x144": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "288x128": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "288x112": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "288x96": {
+          "tileset": "1",
+          "tileId": "80x64"
+        },
+        "16x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "32x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "48x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "64x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "80x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "96x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "112x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "128x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "144x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "144x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "128x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "112x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "96x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "64x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "48x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "80x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "0x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "32x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "16x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "16x208": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "0x208": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "128x208": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "144x208": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "160x208": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "160x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "160x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "160x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "176x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "176x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "176x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "176x208": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "192x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "192x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "208x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "208x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "208x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "224x208": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "208x208": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "192x208": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "192x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "224x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "224x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "240x208": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "240x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "240x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "256x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "256x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "256x208": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "288x208": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "272x208": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "272x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "288x224": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "288x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "272x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "256x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "240x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "224x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "0x240": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "0x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "0x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "16x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "32x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "32x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "16x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "16x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "48x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "48x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "64x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "64x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "80x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "80x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "48x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "96x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "96x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "112x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "112x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "128x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "128x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "144x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "144x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "144x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "112x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "96x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "64x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "80x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "128x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "32x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "0x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "176x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "160x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "160x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "192x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "192x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "176x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "208x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "208x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "224x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "224x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "240x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "256x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "240x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "272x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "256x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "272x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "288x288": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "288x272": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "288x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        },
+        "272x256": {
+          "tileset": "1",
+          "tileId": "80x112"
+        }
+      }
+    },
+    {
+      "layerId": "LAYER_TOP",
+      "tiles": {
+        "176x80": {
+          "tileset": "1",
+          "tileId": "32x176"
+        },
+        "160x96": {
+          "tileset": "1",
+          "tileId": "32x176"
+        },
+        "240x96": {
+          "tileset": "1",
+          "tileId": "32x176"
+        },
+        "256x80": {
+          "tileset": "1",
+          "tileId": "32x176"
+        },
+        "272x48": {
+          "tileset": "1",
+          "tileId": "32x176"
+        },
+        "32x112": {
+          "tileset": "1",
+          "tileId": "64x192"
+        },
+        "48x112": {
+          "tileset": "1",
+          "tileId": "64x192"
+        },
+        "64x112": {
+          "tileset": "1",
+          "tileId": "64x192"
+        },
+        "80x112": {
+          "tileset": "1",
+          "tileId": "64x192"
+        },
+        "48x128": {
+          "tileset": "1",
+          "tileId": "96x176"
+        },
+        "64x128": {
+          "tileset": "1",
+          "tileId": "96x176"
+        },
+        "144x240": {
+          "tileset": "1",
+          "tileId": "80x176"
+        },
+        "160x208": {
+          "tileset": "1",
+          "tileId": "96x176"
+        },
+        "192x224": {
+          "tileset": "1",
+          "tileId": "112x176"
+        },
+        "240x256": {
+          "tileset": "1",
+          "tileId": "64x176"
+        },
+        "256x256": {
+          "tileset": "1",
+          "tileId": "64x176"
+        },
+        "144x256": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "160x256": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "160x240": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "160x224": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "176x240": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "176x256": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "192x240": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "192x256": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "208x256": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "224x256": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "224x272": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "240x272": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "256x272": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "272x272": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "288x272": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "256x288": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "128x256": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "112x256": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "96x256": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "96x272": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "96x288": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "80x272": {
+          "tileset": "1",
+          "tileId": "16x192"
+        },
+        "128x240": {
+          "tileset": "1",
+          "tileId": "0x192"
+        },
+        "288x208": {
+          "tileset": "1",
+          "tileId": "0x192"
+        },
+        "272x288": {
+          "tileset": "1",
+          "tileId": "0x192"
+        },
+        "96x112": {
+          "tileset": "1",
+          "tileId": "64x192"
+        },
+        "16x272": {
+          "tileset": "1",
+          "tileId": "64x192"
+        },
+        "0x272": {
+          "tileset": "1",
+          "tileId": "64x192"
+        },
+        "32x272": {
+          "tileset": "1",
+          "tileId": "64x192"
+        },
+        "144x144": {
+          "tileset": "1",
+          "tileId": "16x176"
+        },
+        "160x128": {
+          "tileset": "1",
+          "tileId": "16x176"
+        },
+        "128x112": {
+          "tileset": "1",
+          "tileId": "16x176"
+        },
+        "176x96": {
+          "tileset": "1",
+          "tileId": "32x160"
+        },
+        "256x96": {
+          "tileset": "1",
+          "tileId": "32x160"
+        },
+        "208x144": {
+          "tileset": "1",
+          "tileId": "32x160"
+        },
+        "272x64": {
+          "tileset": "1",
+          "tileId": "32x160"
+        },
+        "208x48": {
+          "tileset": "1",
+          "tileId": "32x160"
+        },
+        "0x32": {
+          "tileset": "1",
+          "tileId": "112x176"
+        },
+        "16x32": {
+          "tileset": "1",
+          "tileId": "112x176"
+        },
+        "80x256": {
+          "tileset": "1",
+          "tileId": "96x192"
+        },
+        "112x272": {
+          "tileset": "1",
+          "tileId": "96x192"
+        },
+        "96x240": {
+          "tileset": "1",
+          "tileId": "96x176"
+        }
+      }
+    }
+  ],
+  "width": 304,
+  "height": 304,
+  "objects": [
+    {
+      "id": "obj1702930499675",
+      "type": "NPC",
+      "x": 208,
+      "y": 128
+    },
+    {
+      "id": "obj1702930665286",
+      "type": "NPC",
+      "x": 176,
+      "y": 144
+    },
+    {
+      "id": "obj1702930682799",
+      "type": "HERO",
+      "x": 240,
+      "y": 224
+    }
+  ]
+}

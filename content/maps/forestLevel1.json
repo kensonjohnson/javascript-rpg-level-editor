@@ -1,0 +1,67 @@
+{
+  "tiles": [
+    {
+      "layerId": "LAYER_BOTTOM",
+      "tiles": {
+        "32x16": {
+          "tileset": "1",
+          "tileId": "0x0"
+        },
+        "48x16": {
+          "tileset": "1",
+          "tileId": "16x16"
+        },
+        "48x48": {
+          "tileset": "1",
+          "tileId": "16x16"
+        },
+        "48x32": {
+          "tileset": "1",
+          "tileId": "16x16"
+        },
+        "64x16": {
+          "tileset": "1",
+          "tileId": "16x16"
+        },
+        "64x32": {
+          "tileset": "1",
+          "tileId": "16x16"
+        },
+        "64x48": {
+          "tileset": "1",
+          "tileId": "16x16"
+        },
+        "80x48": {
+          "tileset": "1",
+          "tileId": "16x16"
+        },
+        "80x32": {
+          "tileset": "1",
+          "tileId": "16x16"
+        },
+        "80x16": {
+          "tileset": "1",
+          "tileId": "16x16"
+        },
+        "48x0": {
+          "tileset": "1",
+          "tileId": "0x0"
+        },
+        "64x0": {
+          "tileset": "1",
+          "tileId": "16x0"
+        },
+        "80x0": {
+          "tileset": "1",
+          "tileId": "16x0"
+        }
+      }
+    },
+    {
+      "layerId": "LAYER_TOP",
+      "tiles": {}
+    }
+  ],
+  "width": 304,
+  "height": 304
+}

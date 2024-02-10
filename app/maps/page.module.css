@@ -1,0 +1,12 @@
+.mapsPageWrap {
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+}
+
+.mapPageLink {
+  display: block;
+  margin-bottom: 1rem;
+}
