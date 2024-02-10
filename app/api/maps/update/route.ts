@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import fs from "fs-extra";
 import { ITileLayer } from "@/classes/TilePlacement";
+import { getWallsFromTiles } from "./getWallsFromTiles";
 
 type ExpectedBodyParams = {
   fileName?: string;
@@ -44,7 +45,11 @@ export async function POST(req: Request) {
   await fs.writeFile(outputDataImagePath, buffer);
   await fs.writeJSON(
     outputDataJsonPath,
-    { width: body.width, height: body.height },
+    {
+      width: body.width,
+      height: body.height,
+      walls: getWallsFromTiles(body.tiles),
+    },
     jsonFormattingConfig
   );
 
