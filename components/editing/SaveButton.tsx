@@ -2,6 +2,7 @@ import { TilePlacements } from "@/classes/TilePlacement";
 import { TilesetImageMap } from "../tilesets/TilesetLoader";
 import { useState } from "react";
 import styles from "./SaveButton.module.css";
+import { generateCombinedCanvasString } from "@/helpers/generateCombinedCanvasString";
 
 type SaveButtonProps = {
   fileName: string;
@@ -39,6 +40,10 @@ export function SaveButton({
           tiles: tilePlacementsRef.state,
           width: tilePlacementsRef.width,
           height: tilePlacementsRef.height,
+          imageData: generateCombinedCanvasString(
+            tilePlacementsRef,
+            tilesetImageMap
+          ),
         }),
       });
 
