@@ -8,6 +8,7 @@ import { DrawingCanvas } from "./DrawingCanvas";
 import styles from "./LayeredDrawingCanvases.module.css";
 import { useContext } from "react";
 import { TileLayersContext } from "@/contexts/TileLayersContext";
+import { ObjectCanvas } from "./ObjectCanvas";
 
 type LayeredDrawingCanvasesProps = {
   tilesetPlacementsRef: TilePlacements;
@@ -49,6 +50,12 @@ export function LayeredDrawingCanvases({
           tilePlacementsRef={tilesetPlacementsRef}
           tilesetImageMap={tilesetImageMap}
         />
+      </div>
+      <div
+        className={styles.layeredCanvasContainer}
+        data-accept-pointer-events={false}
+      >
+        <ObjectCanvas />
       </div>
     </div>
   );
