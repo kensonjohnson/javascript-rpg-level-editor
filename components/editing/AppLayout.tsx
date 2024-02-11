@@ -7,12 +7,7 @@ import { TilesetLoader } from "../tilesets/TilesetLoader";
 import { TilesetGrid } from "../tilesets/TilesetGrid";
 import { TileSelectionContext } from "@/contexts/TileSelectionContext";
 import { useRef, useState } from "react";
-import {
-  TilePlacements,
-  LAYER_BOTTOM,
-  LAYER_TOP,
-  ITileLayer,
-} from "@/classes/TilePlacement";
+import { TilePlacements, ITileLayer } from "@/classes/TilePlacement";
 import { LayeredDrawingCanvases } from "./LayeredDrawingCanvases";
 import { TileLayersMenu } from "./TileLayersMenu";
 import {
