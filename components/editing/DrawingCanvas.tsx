@@ -87,6 +87,8 @@ export function DrawingCanvas({
     <canvas
       ref={canvasRef}
       className={styles.drawingCanvas}
+      width={tilePlacementsRef.width + "px"}
+      height={tilePlacementsRef.height + "px"}
       onMouseDown={(event) => {
         const canvas = event.target as HTMLCanvasElement;
         const rect = canvas.getBoundingClientRect();

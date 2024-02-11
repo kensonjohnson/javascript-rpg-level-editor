@@ -1,4 +1,3 @@
-import { LAYER_BOTTOM, LAYER_TOP } from "@/classes/TilePlacement";
 import styles from "./TileLayersMenu.module.css";
 import { IconClosedEye } from "../icons/IconClosedEye";
 import { IconEye } from "../icons/IconEye";
