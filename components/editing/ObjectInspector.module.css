@@ -1,0 +1,16 @@
+.objectInspectorPane {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  bottom: 0;
+  width: 20rem;
+  background: var(--background-panel);
+  padding: 1rem;
+  color: #fff;
+}
+
+.positionButtonsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 2rem 0;
+}
