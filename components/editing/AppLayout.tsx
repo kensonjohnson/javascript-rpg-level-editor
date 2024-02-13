@@ -20,6 +20,7 @@ import {
   ObjectPlacementsContext,
   defaultObjectPlacements,
 } from "@/contexts/ObjectPlacementsContext";
+import { ObjectInspector } from "./ObjectInspector";
 
 type AppLayoutProps = {
   fileName: string;
@@ -87,6 +88,7 @@ export function AppLayout({ fileName, initialData }: AppLayoutProps) {
                       tilesetImageMap={imageMap}
                     />
                   </div>
+                  <ObjectInspector />
                 </main>
               </ObjectPlacementsContext.Provider>
             </TileLayersContext.Provider>
