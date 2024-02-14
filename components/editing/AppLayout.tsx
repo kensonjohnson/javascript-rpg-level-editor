@@ -21,6 +21,7 @@ import {
   defaultObjectPlacements,
 } from "@/contexts/ObjectPlacementsContext";
 import { ObjectInspector } from "./ObjectInspector";
+import { NewObjectButtons } from "./NewObjectButtons";
 
 type AppLayoutProps = {
   fileName: string;
@@ -81,6 +82,7 @@ export function AppLayout({ fileName, initialData }: AppLayoutProps) {
                       );
                     })}
                     <TileLayersMenu />
+                    <NewObjectButtons />
                   </aside>
                   <div className={styles.workingArea}>
                     <LayeredDrawingCanvases
