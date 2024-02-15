@@ -1,8 +1,9 @@
 import { TilePlacements } from "@/classes/TilePlacement";
 import { TilesetImageMap } from "../tilesets/TilesetLoader";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import styles from "./SaveButton.module.css";
 import { generateCombinedCanvasString } from "@/helpers/generateCombinedCanvasString";
+import { ObjectPlacementsContext } from "@/contexts/ObjectPlacementsContext";
 
 type SaveButtonProps = {
   fileName: string;
@@ -21,6 +22,10 @@ export function SaveButton({
   tilesetImageMap,
 }: SaveButtonProps) {
   const [buttonState, setButtonState] = useState(BUTTON_STATE_READY);
+
+  const [objectPlacements, setObjectPlacements] = useContext(
+    ObjectPlacementsContext
+  );
 
   async function handleClick() {
     if (buttonState !== BUTTON_STATE_READY) {
@@ -44,6 +49,7 @@ export function SaveButton({
             tilePlacementsRef,
             tilesetImageMap
           ),
+          objects: objectPlacements.objects,
         }),
       });
 
