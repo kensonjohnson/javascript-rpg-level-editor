@@ -17,6 +17,7 @@ import {
 } from "@/contexts/TileLayersContext";
 import { SaveButton } from "./SaveButton";
 import {
+  IObjectPlacement,
   ObjectPlacementsContext,
   defaultObjectPlacements,
 } from "@/contexts/ObjectPlacementsContext";
@@ -27,6 +28,7 @@ type AppLayoutProps = {
   fileName: string;
   initialData: {
     tiles: ITileLayer[];
+    objects: IObjectPlacement[];
   };
 };
 
@@ -35,9 +37,10 @@ export function AppLayout({ fileName, initialData }: AppLayoutProps) {
   const [layersState, setLayersState] = useState<ITileLayers>(
     defaultTileLayersState
   );
-  const [objectPlacements, setObjectPlacements] = useState(
-    defaultObjectPlacements
-  );
+  const [objectPlacements, setObjectPlacements] = useState({
+    ...defaultObjectPlacements,
+    objects: initialData.objects ?? defaultObjectPlacements.objects,
+  });
 
   const tilePlacementsRef = useRef<TilePlacements>(
     new TilePlacements(initialData.tiles)

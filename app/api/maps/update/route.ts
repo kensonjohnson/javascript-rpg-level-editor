@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs-extra";
 import { ITileLayer } from "@/classes/TilePlacement";
 import { getWallsFromTiles } from "./getWallsFromTiles";
+import { IObjectPlacement } from "@/contexts/ObjectPlacementsContext";
 
 type ExpectedBodyParams = {
   fileName?: string;
@@ -9,6 +10,7 @@ type ExpectedBodyParams = {
   width: number;
   height: number;
   imageData: string;
+  objects: IObjectPlacement[];
 };
 
 export async function POST(req: Request) {
@@ -25,6 +27,7 @@ export async function POST(req: Request) {
     tiles: body.tiles,
     width: body.width,
     height: body.height,
+    objects: body.objects,
   };
   const jsonFormattingConfig = { spaces: 2 };
 
@@ -49,6 +52,7 @@ export async function POST(req: Request) {
       width: body.width,
       height: body.height,
       walls: getWallsFromTiles(body.tiles),
+      objects: body.objects,
     },
     jsonFormattingConfig
   );
